@@ -51,37 +51,6 @@
             <h1>Countdown till International Night</h1>
             <h2 id="demo"></h2>
             
-            <script>
-                // Set the date we're counting down to
-                var countDownDate = new Date("Nov 17, 2017 19:00:00").getTime();
-
-                // Update the count down every 1 second
-                var x = setInterval(function() {
-
-                    // Get todays date and time
-                    var now = new Date().getTime();
-
-                    // Find the distance between now an the count down date
-                    var distance = countDownDate - now;
-
-                    // Time calculations for days, hours, minutes and seconds
-                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                    // Display the result in the element with id="demo"
-                    document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-                        minutes + "m " + seconds + "s ";
-
-                    // If the count down is finished, write some text 
-                    if (distance < 0) {
-                        clearInterval(x);
-                        document.getElementById("demo").innerHTML = "EXPIRED";
-                    }
-                }, 1000);
-            </script>
-            
             <br>
             
             <a class="btn btn-lg btn-primary" href="https://on.asucis.com/cis-in17" target="_blank">
@@ -90,43 +59,23 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="list-inline" id="social">
-                        <li class="list-inline-item">
-                            <span class="text-muted">Copyright &copy; 2017 &sdot; designed by
-                            <a href="http://www.linkedin.com/in/dickwyn" target="_blank">dickwyn</a></span>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline social" target="_blank" href="https://www.facebook.com/ASUCIS/">
-                                <i class="fa fa-fw fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline" target="_blank" href="https://www.instagram.com/asucis/">
-                                <i class="fa fa-fw fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline" target="_blank" href="https://twitter.com/asu_cis">
-                                <i class="fa fa-fw fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline" target="_blank" href="https://www.snapchat.com/add/asucis">
-                                <i class="fa fa-fw fa-snapchat"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline" target="_blank" href="weixin.html">
-                                <i class="fa fa-fw fa-wechat"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <center>
+            <a class="btn-social btn-outline social" target="_blank" href="https://www.facebook.com/ASUCIS/">
+                <i class="fa fa-2x fa-facebook"></i>
+            </a>
+            <a class="btn-social btn-outline" target="_blank" href="https://www.instagram.com/asucis/">
+                <i class="fa fa-2x fa-instagram"></i>
+            </a>
+            <a class="btn-social btn-outline" target="_blank" href="https://twitter.com/asu_cis">
+                <i class="fa fa-2x fa-twitter"></i>
+            </a>
+            <a class="btn-social btn-outline" target="_blank" href="https://www.snapchat.com/add/asucis">
+                <i class="fa fa-2x fa-snapchat"></i>
+            </a>
+            <a class="btn-social btn-outline" target="_blank" href="weixin.html">
+                <i class="fa fa-2x fa-wechat"></i>
+            </a>
+        </center>
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
